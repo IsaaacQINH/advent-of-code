@@ -1,22 +1,5 @@
-const { getData } = require("./fetch");
-const { run } = require("./run");
-
-const horizontalize = (array, interval) => {
-    let horizontal = [];
-
-    for (let i = 0; i < 9; i++) {
-        let row = [];
-        array.forEach(line => {
-            let crate = line.slice(i * interval + i, (i + 1) * interval + (i + 1)).replaceAll(" ", "");
-            if(crate.match(/\[\w\]/g)) {
-                row.unshift(crate);
-            }
-        });
-        horizontal.push(row);
-    }
-
-    return horizontal;
-}
+const { getData } = require("../fetch");
+const { run } = require("../run");
 
 const exec = async () => {
     let result = 0;

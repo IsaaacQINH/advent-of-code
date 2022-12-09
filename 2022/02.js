@@ -1,5 +1,5 @@
-const { getData } = require("./fetch");
-const { run } = require("./run");
+const { getData } = require("../fetch");
+const { run } = require("../run");
 
 const RULES = {
     x: {

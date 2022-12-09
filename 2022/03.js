@@ -1,5 +1,5 @@
-const { getData } = require("./fetch");
-const { run } = require("./run");
+const { getData } = require("../fetch");
+const { run } = require("../run");
 
 String.prototype.removeDuplicate = function() {
     const arr = this.split("");

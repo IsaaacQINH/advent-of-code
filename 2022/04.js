@@ -1,5 +1,5 @@
-const { getData } = require("./fetch");
-const { run } = require("./run");
+const { getData } = require("../fetch");
+const { run } = require("../run");
 
 const exec = async () => {
     const data = await getData("https://adventofcode.com/2022/day/4/input");
